@@ -54,7 +54,7 @@ var squaresConfig = {
 		setting: [20, 16, 14, 193, 255, 255, 255, 20],
 		check1Setting: [255, 255, 0, 80],
 		sound: "rect_r1a.wav",
-		move1Setting: [16, 398, .6],
+		move1Setting: [16, 415, .6],
 		move2Setting: ""
 	},
 	r1b: {
@@ -62,7 +62,7 @@ var squaresConfig = {
 		setting: [115, 16, 7, 193, 255, 255, 255, 40],
 		check1Setting: [255, 255, 0, 50],
 		sound: "rect_r1b.wav",
-		move1Setting: [16, 398, .3],
+		move1Setting: [16, 415, .3],
 		move2Setting: ""
 	},
 	r1c: {
@@ -71,7 +71,7 @@ var squaresConfig = {
 		check1Setting: [255, 255, 0, 100],
 		sound: "rect_r1c.wav",
 		move1Setting: "",
-		move2Setting: [16, 398, -.6]
+		move2Setting: [16, 415, -.6]
 	},
 	r1d: {
 		stroke: false,
@@ -79,14 +79,14 @@ var squaresConfig = {
 		check1Setting: [255, 255, 0, 70],
 		sound: "rect_r1d.wav",
 		move1Setting: "",
-		move2Setting: [16, 398, -.5]
+		move2Setting: [16, 415, -.5]
 	},
 	r1e: {
 		stroke: false,
 		setting: [75, 16, 12, 193, 255, 255, 255, 45],
 		check1Setting: [255, 255, 0, 80],
 		sound: "rect_r1e.wav",
-		move1Setting: [16, 398, .7],
+		move1Setting: [16, 415, .7],
 		move2Setting: ""
 	},
 	r1f: {
@@ -94,7 +94,7 @@ var squaresConfig = {
 		setting: [185, 16, 5, 193, 255, 255, 255, 40],
 		check1Setting: [255, 255, 0, 80],
 		sound: "rect_r1f.wav",
-		move1Setting: [16, 398, .3],
+		move1Setting: [16, 415, .3],
 		move2Setting: ""
 	},
 	r1g: {
@@ -103,7 +103,7 @@ var squaresConfig = {
 		check1Setting: [255, 255, 0, 80],
 		sound: "rect_r1g.wav",
 		move1Setting: "",
-		move2Setting: [16, 398, -.5]
+		move2Setting: [16, 415, -.5]
 	},
 	r1h: {
 		stroke: false,
@@ -111,7 +111,7 @@ var squaresConfig = {
 		check1Setting: [255, 255, 0, 80],
 		sound: "rect_r1h.wav",
 		move1Setting: "",
-		move2Setting: [16, 398, -.4]
+		move2Setting: [16, 415, -.4]
 	},
 
 	r1i: {
@@ -119,7 +119,7 @@ var squaresConfig = {
 		setting: [101, 16, 6, 193, 255, 255, 255, 20],
 		check1Setting: [255, 255, 0, 80],
 		sound: "rect_r1i.wav",
-		move1Setting: [16, 398, .6],
+		move1Setting: [16, 415, .6],
 		move2Setting: ""
 	},
 	r1j: {
@@ -127,7 +127,7 @@ var squaresConfig = {
 		setting: [16, 16, 8, 193, 255, 255, 255, 40],
 		check1Setting: [255, 255, 0, 80],
 		sound: "rect_r1j.wav",
-		move1Setting: [16, 398, .3],
+		move1Setting: [16, 415, .3],
 		move2Setting: ""
 	},
 	r1k: {
@@ -144,14 +144,14 @@ var squaresConfig = {
 		check1Setting: [255, 255, 0, 80],
 		sound: "rect_r1l.wav",
 		move1Setting: "",
-		move2Setting: [16, 398, -.7]
+		move2Setting: [16, 415, -.7]
 	},
 	r1m: {
 		stroke: false,
 		setting: [205, 16, 6, 193, 255, 255, 255, 20],
 		check1Setting: [255, 255, 0, 80],
 		sound: "",
-		move1Setting: [16, 398, .7],
+		move1Setting: [16, 415, .7],
 		move2Setting: ""
 	},
 	r1n: {
@@ -159,7 +159,7 @@ var squaresConfig = {
 		setting: [350, 16, 8, 193, 255, 255, 255, 40],
 		check1Setting: [255, 255, 0, 80],
 		sound: "",
-		move1Setting: [16, 398, .5],
+		move1Setting: [16, 415, .5],
 		move2Setting: ""
 	},
 	r1o: {
@@ -168,7 +168,7 @@ var squaresConfig = {
 		check1Setting: [255, 255, 0, 80],
 		sound: "",
 		move1Setting: "",
-		move2Setting: [16, 398, -.4]
+		move2Setting: [16, 415, -.4]
 	},
 	r1p: {
 		stroke: false,
@@ -176,7 +176,7 @@ var squaresConfig = {
 		check1Setting: [255, 255, 0, 80],
 		sound: "",
 		move1Setting: "",
-		move2Setting: [16, 398, -.6]
+		move2Setting: [16, 415, -.6]
 	},
 
 	r2a: {
@@ -184,7 +184,7 @@ var squaresConfig = {
 		setting: [101, 221, 36, 93, 255, 255, 255, 8],
 		check1Setting: [110, 0, 230, 100],
 		sound: "rect_r2a.wav",
-		move1Setting: [16, 398, .3],
+		move1Setting: [16, 415, .3],
 		move2Setting: ""
 	},
 	r2b: {
@@ -192,7 +192,7 @@ var squaresConfig = {
 		setting: [17, 221, 28, 93, 255, 255, 255, 4],
 		check1Setting: [100, 0, 230, 80],
 		sound: "rect_r2b.wav",
-		move1Setting: [16, 398, .4],
+		move1Setting: [16, 415, .4],
 		move2Setting: ""
 	},
 	r2c: {
@@ -200,7 +200,7 @@ var squaresConfig = {
 		setting: [65, 221, 32, 93, 255, 255, 255, 5],
 		check1Setting: [100, 0, 220, 90],
 		sound: "rect_r2c.wav",
-		move1Setting: [16, 398, .7],
+		move1Setting: [16, 415, .7],
 		move2Setting: ""
 	},
 	r2d: {
@@ -208,7 +208,7 @@ var squaresConfig = {
 		setting: [165, 221, 39, 93, 255, 255, 255, 4],
 		check1Setting: [110, 0, 210, 80],
 		sound: "rect_r2d.wav",
-		move1Setting: [16, 398, .5],
+		move1Setting: [16, 415, .5],
 		move2Setting: ""
 	},
 	r2e: {
@@ -216,7 +216,7 @@ var squaresConfig = {
 		setting: [205, 221, 37, 93, 255, 255, 255, 6],
 		check1Setting: [106, 0, 230, 80],
 		sound: "",
-		move1Setting: [16, 398, .6],
+		move1Setting: [16, 415, .6],
 		move2Setting: ""
 	},
 	r2f: {
@@ -224,7 +224,7 @@ var squaresConfig = {
 		setting: [345, 221, 34, 93, 255, 255, 255, 7],
 		check1Setting: [110, 0, 190, 80],
 		sound: "",
-		move1Setting: [16, 398, .2],
+		move1Setting: [16, 415, .2],
 		move2Setting: ""
 	},
 
@@ -234,7 +234,7 @@ var squaresConfig = {
 		check1Setting: [100, 0, 210, 80],
 		sound: "",
 		move1Setting: "",
-		move2Setting: [16, 398, -.8]
+		move2Setting: [16, 415, -.8]
 	},
 	r2h: {
 		stroke: false,
@@ -242,7 +242,7 @@ var squaresConfig = {
 		check1Setting: [120, 0, 200, 80],
 		sound: "",
 		move1Setting: "",
-		move2Setting: [16, 398, -.6]
+		move2Setting: [16, 415, -.6]
 	},
 	r2i: {
 		stroke: false,
@@ -250,7 +250,7 @@ var squaresConfig = {
 		check1Setting: [100, 0, 190, 80],
 		sound: "",
 		move1Setting: "",
-		move2Setting: [16, 398, -.7]
+		move2Setting: [16, 415, -.7]
 	},
 	r2j: {
 		stroke: false,
@@ -258,7 +258,7 @@ var squaresConfig = {
 		check1Setting: [110, 0, 180, 80],
 		sound: "",
 		move1Setting: "",
-		move2Setting: [16, 398, -.4]
+		move2Setting: [16, 415, -.4]
 	},
 	r2k: {
 		stroke: false,
@@ -266,7 +266,7 @@ var squaresConfig = {
 		check1Setting: [100, 0, 190, 80],
 		sound: "",
 		move1Setting: "",
-		move2Setting: [16, 398, -.3]
+		move2Setting: [16, 415, -.3]
 	},
 	r2l: {
 		stroke: false,
@@ -274,7 +274,7 @@ var squaresConfig = {
 		check1Setting: [110, 0, 190, 80],
 		sound: "",
 		move1Setting: "",
-		move2Setting: [16, 398, -.5]
+		move2Setting: [16, 415, -.5]
 	},
 
 	r4a: {
@@ -282,7 +282,7 @@ var squaresConfig = {
 		setting: [17, 336, 50, 23, 110, 110, 110, 10],
 		check1Setting: [102, 204, 0, 100],
 		sound: "rect_r4a.wav",
-		move1Setting: [16, 398, .6],
+		move1Setting: [16, 415, .6],
 		move2Setting: ""
 	},
 	r4b: {
@@ -290,7 +290,7 @@ var squaresConfig = {
 		setting: [310, 336, 50, 23, 110, 110, 110, 10],
 		check1Setting: [102, 204, 0, 100],
 		sound: "rect_r4b.wav",
-		move1Setting: [16, 398, .3],
+		move1Setting: [16, 415, .3],
 		move2Setting: ""
 	},
 	r4c: {
@@ -298,7 +298,7 @@ var squaresConfig = {
 		setting: [145, 336, 50, 23, 110, 110, 110, 10],
 		check1Setting: [102, 204, 0, 100],
 		sound: "rect_r4c.wav",
-		move1Setting: [16, 398, .2],
+		move1Setting: [16, 415, .2],
 		move2Setting: ""
 	},
 	r4d: {
@@ -307,7 +307,7 @@ var squaresConfig = {
 		check1Setting: [102, 204, 0, 100],
 		sound: "rect_r4d.wav",
 		move1Setting: "",
-		move2Setting: [16, 398, -.6]
+		move2Setting: [16, 415, -.6]
 	},
 	r4e: {
 		stroke: false,
@@ -315,7 +315,7 @@ var squaresConfig = {
 		check1Setting: [102, 204, 0, 100],
 		sound: "",
 		move1Setting: "",
-		move2Setting: [16, 398, -.5]
+		move2Setting: [16, 415, -.5]
 	},
 	r4f: {
 		stroke: false,
@@ -323,7 +323,7 @@ var squaresConfig = {
 		check1Setting: [102, 204, 0, 100],
 		sound: "",
 		move1Setting: "",
-		move2Setting: [16, 398, -.3]
+		move2Setting: [16, 415, -.3]
 	},
 
 	r5a: {
@@ -331,7 +331,7 @@ var squaresConfig = {
 		setting: [17, 361, 14, 48, 110, 100, 100, 20],
 		check1Setting: [255, 100, 0, 80],
 		sound: "rect_r5a.wav",
-		move1Setting: [16, 398, .4],
+		move1Setting: [16, 415, .4],
 		move2Setting: ""
 	},
 	r5b: {
@@ -339,7 +339,7 @@ var squaresConfig = {
 		setting: [110, 361, 14, 48, 110, 100, 100, 20],
 		check1Setting: [255, 110, 0, 75],
 		sound: "rect_r5b.wav",
-		move1Setting: [16, 398, .5],
+		move1Setting: [16, 415, .5],
 		move2Setting: ""
 	},
 	r5c: {
@@ -347,7 +347,7 @@ var squaresConfig = {
 		setting: [275, 361, 14, 48, 110, 100, 100, 20],
 		check1Setting: [255, 105, 0, 90],
 		sound: "rect_r5c.wav",
-		move1Setting: [16, 398, .4],
+		move1Setting: [16, 415, .4],
 		move2Setting: ""
 	},
 	r5d: {
@@ -355,7 +355,7 @@ var squaresConfig = {
 		setting: [350, 361, 14, 48, 110, 100, 100, 20],
 		check1Setting: [255, 115, 0, 100],
 		sound: "rect_r5d.wav",
-		move1Setting: [16, 398, .6],
+		move1Setting: [16, 415, .6],
 		move2Setting: ""
 	},
 
@@ -365,7 +365,7 @@ var squaresConfig = {
 		check1Setting: [255, 60, 0, 80],
 		sound: "rect_r5e.wav",
 		move1Setting: "",
-		move2Setting: [16, 398, -.9]
+		move2Setting: [16, 415, -.9]
 	},
 	r5f: {
 		stroke: false,
@@ -373,7 +373,7 @@ var squaresConfig = {
 		check1Setting: [255, 90, 0, 80],
 		sound: "rect_r5f.wav",
 		move1Setting: "",
-		move2Setting: [16, 398, -.7]
+		move2Setting: [16, 415, -.7]
 	},
 	r5g: {
 		stroke: false,
@@ -381,7 +381,7 @@ var squaresConfig = {
 		check1Setting: [255, 100, 0, 90],
 		sound: "rect_r5g.wav",
 		move1Setting: "",
-		move2Setting: [16, 398, -.5]
+		move2Setting: [16, 415, -.5]
 	},
 	r5h: {
 		stroke: false,
@@ -389,10 +389,14 @@ var squaresConfig = {
 		check1Setting: [255, 100, 0, 85],
 		sound: "",
 		move1Setting: "",
-		move2Setting: [6, 398, -.4]
+		move2Setting: [6, 415, -.4]
 	}
 }
 
+var newOrigin = {
+	x: 0,
+	y: 0
+}
 // load all the sound files
 function preload() {
 	Object.keys(squaresConfig).forEach(function(key) {
@@ -405,7 +409,7 @@ function setup() {
 	// canvas settings
 	createCanvas(windowWidth, windowHeight)
 	frameRate(30)
-	background(255)
+	background(0)
 	colorMode(RGB, 255, 255, 255, 100);
 
 
@@ -425,17 +429,23 @@ function setup() {
 		if (squaresConfig[key].sound != "")
 			squaresConfig[key].square.setSound(squaresConfig[key].soundFile)
 	})
+	newOrigin.x = windowWidth / 2 - squaresConfig.r1x.square.w / 2
+	newOrigin.y = windowHeight / 2 - squaresConfig.r1x.square.h / 2
+
 }
 
 function draw() {
 	//drawing settings
-	background(255)
+	background(0)
 	smooth()
+	push()
+	translate(newOrigin.x, newOrigin.y)
 	noStroke()
 	squaresConfig.r1x.square.update()
-	squaresConfig.r1x.square.mouseCheck3(0, 0, 0, 100)
+	squaresConfig.r1x.square.mouseCheck3(newOrigin, 0, 0, 0, 100)
 
 	//update
+
 	Object.keys(squaresConfig).forEach(function(key) {
 
 
@@ -450,7 +460,7 @@ function draw() {
 
 		//mouse check1
 		if (squaresConfig[key].check1Setting != null) {
-			squaresConfig[key].square.mouseCheck1(
+			squaresConfig[key].square.mouseCheck1(newOrigin,
 				squaresConfig[key].check1Setting[0],
 				squaresConfig[key].check1Setting[1],
 				squaresConfig[key].check1Setting[2],
@@ -460,7 +470,7 @@ function draw() {
 
 		//mouse check 2
 		if (squaresConfig[key].sound != "") {
-			squaresConfig[key].square.mouseCheck2()
+			squaresConfig[key].square.mouseCheck2(newOrigin)
 		}
 
 		//move1
@@ -483,6 +493,7 @@ function draw() {
 
 
 	})
+	pop()
 }
 
 function windowResized() {

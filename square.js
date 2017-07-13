@@ -30,8 +30,8 @@ var Square = function(x, y, w, h, r1, g1, b1, a1) {
 		this.rsound = s
 	}
 
-	this.mouseCheck1 = function(redness, greenness, blueness, alphaness) {
-		if (mouseX > this.x && mouseY > this.y && mouseX <= this.x + this.w && mouseY <= this.y + this.h) {
+	this.mouseCheck1 = function(origin, redness, greenness, blueness, alphaness) {
+		if (mouseX > origin.x + this.x && mouseY > origin.y + this.y && mouseX <= origin.x + this.x + this.w && mouseY <= origin.y + this.y + this.h) {
 			this.r1 = this.r1 + 5
 			this.g1 = this.g1 + 5
 			this.b1 = this.b1 + 5
@@ -53,23 +53,23 @@ var Square = function(x, y, w, h, r1, g1, b1, a1) {
 
 	}
 
-	this.mouseCheck2 = function() {
+	this.mouseCheck2 = function(origin) {
 		if (this.playsound) {
 			this.rsound.stop()
 			this.rsound.play()
 			this.playsound = false
 		}
 
-		if (mouseX > this.x && mouseY > this.y && mouseX < this.x + this.w && mouseY < this.y + this.h && !this.rollOver) {
+		if (mouseX > origin.x + this.x && mouseY > origin.y + this.y && mouseX <= origin.x + this.x + this.w && mouseY <= origin.y + this.y + this.h && !this.rollOver) {
 			this.playsound = true
 			this.rollOver = true
-		} else if (!(mouseX > this.x && mouseY > this.y && mouseX < this.x + this.w && mouseY < this.y + this.h)) {
+		} else if (!(mouseX > origin.x + this.x && mouseY > origin.y + this.y && mouseX <= origin.x + this.x + this.w && mouseY <= origin.y + this.y + this.h)) {
 			this.rollOver = false
 		}
 	}
 
-	this.mouseCheck3 = function(redness, greenness, blueness, alphaness) {
-		if (mouseX > this.x && mouseY > this.y && mouseX <= this.x + this.w && mouseY <= this.y + this.h) {
+	this.mouseCheck3 = function(origin, redness, greenness, blueness, alphaness) {
+		if (mouseX > origin.x + this.x && mouseY > origin.y + this.y && mouseX <= origin.x + this.x + this.w && mouseY <= origin.y + this.y + this.h) {
 			this.r1 = this.r1 - 5
 			this.g1 = this.g1 - 5
 			this.b1 = this.b1 - 5
@@ -93,11 +93,7 @@ var Square = function(x, y, w, h, r1, g1, b1, a1) {
 
 	this.move1 = function(start, end, speed) {
 		this.x += speed
-		if (this.x > end - (this.w / 2)) {
-
-			if (this.w == 50) {
-				console.log("x", end - (this.w / 2))
-			}
+		if (this.x > end - (this.w / 1)) {
 			this.x = start
 		}
 	}
