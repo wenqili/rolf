@@ -364,7 +364,7 @@ var squaresConfig = {
 		setting: [35, 361, 14, 48, 110, 100, 100, 20],
 		check1Setting: [255, 60, 0, 80],
 		sound: "rect_r5e.wav",
-		move1Setting: "",
+		move1Setting:   "",
 		move2Setting: [16, 415, -.9]
 	},
 	r5f: {
@@ -393,9 +393,11 @@ var squaresConfig = {
 	}
 }
 
-var newOrigin = {
+var canvasSetting = {
 	x: 0,
-	y: 0
+	y: 0,
+	ratio: 1 / 430,
+	sideLength: 0
 }
 // load all the sound files
 function preload() {
@@ -407,7 +409,8 @@ function preload() {
 
 function setup() {
 	// canvas settings
-	createCanvas(windowWidth, windowHeight)
+	canvasSetting.sideLength = min(windowHeight, windowWidth)
+	createCanvas(canvasSetting.sideLength, canvasSetting.sideLength)
 	frameRate(30)
 	background(0)
 	colorMode(RGB, 255, 255, 255, 100);
@@ -416,6 +419,7 @@ function setup() {
 	Object.keys(squaresConfig).forEach(function(key) {
 		// console.log(squaresConfig[key].setting[0])
 		squaresConfig[key].square = new Square(
+			canvasSetting,
 			squaresConfig[key].setting[0],
 			squaresConfig[key].setting[1],
 			squaresConfig[key].setting[2],
@@ -429,25 +433,20 @@ function setup() {
 		if (squaresConfig[key].sound != "")
 			squaresConfig[key].square.setSound(squaresConfig[key].soundFile)
 	})
-	newOrigin.x = windowWidth / 2 - squaresConfig.r1x.square.w / 2
-	newOrigin.y = windowHeight / 2 - squaresConfig.r1x.square.h / 2
-
 }
 
 function draw() {
 	//drawing settings
 	background(0)
 	smooth()
-	push()
-	translate(newOrigin.x, newOrigin.y)
 	noStroke()
 	squaresConfig.r1x.square.update()
-	squaresConfig.r1x.square.mouseCheck3(newOrigin, 0, 0, 0, 100)
+	squaresConfig.r1x.square.mouseCheck3(0, 0, 0, 100)
 
 	//update
-
+	push()
+	// translate(canvasSetting.x, 0)
 	Object.keys(squaresConfig).forEach(function(key) {
-
 
 		//update
 		if (squaresConfig[key].stroke == false) {
@@ -460,7 +459,7 @@ function draw() {
 
 		//mouse check1
 		if (squaresConfig[key].check1Setting != null) {
-			squaresConfig[key].square.mouseCheck1(newOrigin,
+			squaresConfig[key].square.mouseCheck1(
 				squaresConfig[key].check1Setting[0],
 				squaresConfig[key].check1Setting[1],
 				squaresConfig[key].check1Setting[2],
@@ -470,7 +469,7 @@ function draw() {
 
 		//mouse check 2
 		if (squaresConfig[key].sound != "") {
-			squaresConfig[key].square.mouseCheck2(newOrigin)
+			squaresConfig[key].square.mouseCheck2()
 		}
 
 		//move1
@@ -497,5 +496,23 @@ function draw() {
 }
 
 function windowResized() {
-	resizeCanvas(windowWidth, windowHeight)
+	canvasSetting.sideLength = min(windowHeight, windowWidth)
+	Object.keys(squaresConfig).forEach(function(key) {
+		// console.log(squaresConfig[key].setting[0])
+		squaresConfig[key].square = new Square(
+			canvasSetting,
+			squaresConfig[key].setting[0],
+			squaresConfig[key].setting[1],
+			squaresConfig[key].setting[2],
+			squaresConfig[key].setting[3],
+			squaresConfig[key].setting[4],
+			squaresConfig[key].setting[5],
+			squaresConfig[key].setting[6],
+			squaresConfig[key].setting[7])
+
+		// set sound to squares that have sounds
+		if (squaresConfig[key].sound != "")
+			squaresConfig[key].square.setSound(squaresConfig[key].soundFile)
+	})
+	resizeCanvas(canvasSetting.sideLength, canvasSetting.sideLength)
 }
